@@ -1,50 +1,55 @@
-# React + TypeScript + Vite
+# React Router DOM Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the React Router DOM project! In this project, we will explore how to install and work with React Router DOM to manage navigation in a React application.
 
-Currently, two official plugins are available:
+## Table of Contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Introduction](#introduction)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Examples](#examples)
+- [Contributing](#contributing)
+- [License](#license)
 
-## Expanding the ESLint configuration
+## Introduction
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+React Router DOM is a library that enables dynamic routing in a web application. It allows you to handle navigation and rendering of components based on the URL.
 
-- Configure the top-level `parserOptions` property like this:
+## Getting Started
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+To run this project locally, follow these steps:
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+1. Clone the repository:
+  ```bash
+  git clone https://github.com/danicm93/react-router-dom-project.git
+  ```
+2. Navigate to the project directory:
+  ```bash
+  cd react-router-dom-project
+  ```
+3. Install the dependencies:
+  ```bash
+  npm install
+  ```
+4. Start the development server:
+  ```bash
+  npm run dev
+  ```
+5. Open your browser and visit `http://localhost:5173` to view the application.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## Contributing
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+Contributions are welcome! If you'd like to contribute to this project, please fork the repository and submit a pull request with your changes.
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## Acknowledgements
+
+- Character data and images are property of The Simpsons and Fox Broadcasting Company.
+- This project is for educational purposes only and is not affiliated with or endorsed by The Simpsons or Fox Broadcasting Company.
+
+## Contact
+
+For any questions or feedback, please open an issue on this repository or contact the project maintainer.
